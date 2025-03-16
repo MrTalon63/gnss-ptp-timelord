@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "neo-f10t")(type "KiCad")(uri "${KIPRJMOD}/neo-f10t.kicad_sym")(options "")(descr ""))
+)
