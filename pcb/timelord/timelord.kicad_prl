@@ -49,7 +49,7 @@
       "conflict_shadows",
       "shapes"
     ],
-    "visible_layers": "ffffffff_ffffffff_fffffff5_ffffffff",
+    "visible_layers": "00000000_00000000_00aaaa82_aaaaaaff",
     "zone_display_mode": 0
   },
   "git": {
@@ -58,7 +58,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "timelord.kicad_prl",
+    "filename": "timelord2.kicad_prl",
     "version": 5
   },
   "net_inspector_panel": {
@@ -91,18 +91,18 @@
       11
     ],
     "col_widths": [
-      254,
-      230,
-      160,
-      155,
-      166,
-      149,
-      155,
-      133,
-      143,
-      143,
-      143,
-      143
+      162,
+      147,
+      102,
+      99,
+      106,
+      95,
+      99,
+      85,
+      91,
+      91,
+      91,
+      91
     ],
     "custom_group_rules": [],
     "expanded_rows": [],
