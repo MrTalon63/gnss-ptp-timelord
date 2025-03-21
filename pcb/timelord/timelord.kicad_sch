@@ -2799,7 +2799,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Timer_RTC:DS3231MZ"
+		(symbol "Timer_RTC:DS3232M"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2812,8 +2812,8 @@
 					(justify right)
 				)
 			)
-			(property "Value" "DS3231MZ"
-				(at 11.43 8.89 0)
+			(property "Value" "DS3232M"
+				(at 10.16 8.89 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2822,7 +2822,7 @@
 				)
 			)
 			(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-				(at 0 -12.7 0)
+				(at 1.27 -12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2830,8 +2830,8 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://datasheets.maximintegrated.com/en/ds/DS3231M.pdf"
-				(at 0 -15.24 0)
+			(property "Datasheet" "http://datasheets.maximintegrated.com/en/ds/DS3232M.pdf"
+				(at 6.858 3.81 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2839,7 +2839,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "±5ppm, I2C Real-Time Clock SOIC-8"
+			(property "Description" "±5ppm, I2C Real-Time Clock with SRAM SOIC-8"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2848,7 +2848,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "RTC TCXO Realtime Time Clock MEMS I2C"
+			(property "ki_keywords" "RTC TCXO Realtime Time Clock MEMS SRAM I2C"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2866,7 +2866,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "DS3231MZ_0_1"
+			(symbol "DS3232M_0_1"
 				(rectangle
 					(start -10.16 7.62)
 					(end 10.16 -7.62)
@@ -2879,7 +2879,7 @@
 					)
 				)
 			)
-			(symbol "DS3231MZ_1_1"
+			(symbol "DS3232M_1_1"
 				(pin input line
 					(at -12.7 5.08 0)
 					(length 2.54)
@@ -2988,7 +2988,7 @@
 						)
 					)
 				)
-				(pin open_collector line
+				(pin output line
 					(at 12.7 5.08 180)
 					(length 2.54)
 					(name "32KHZ"
@@ -7080,6 +7080,15 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" "485-2222"
+			(at 245.11 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8d678796-43d4-427f-808d-7fd8ec169db6")
 		)
@@ -7368,7 +7377,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "04b201c2-2bea-4f12-93b4-dd5e45d4bd68")
-		(property "Reference" "U2"
+		(property "Reference" "U1"
 			(at 164.7033 138.43 0)
 			(effects
 				(font
@@ -7503,7 +7512,7 @@
 			)
 			(project ""
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "U2")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -8135,6 +8144,82 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 29.21 34.29 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2778bebb-8430-4e95-a3bf-ffe624381bee")
+		(property "Reference" "R17"
+			(at 29.21 29.972 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "470"
+			(at 29.21 32.004 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 29.21 36.068 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 29.21 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 29.21 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "603-RT0603DRD07470RL"
+			(at 29.21 34.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b4cec764-bce1-4bed-a856-546975f78f0f")
+		)
+		(pin "2"
+			(uuid "3b538035-5ea6-4c7e-9bdc-9c94ff54ee03")
+		)
+		(instances
+			(project "timelord"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "R17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 186.69 41.91 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8271,82 +8356,6 @@
 			(project "timelord2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR0119")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 29.21 34.29 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3214a24b-9d89-47a6-be49-81c7f3ea3b26")
-		(property "Reference" "R17"
-			(at 29.21 29.972 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1k"
-			(at 29.21 32.004 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 29.21 36.068 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 29.21 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 29.21 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFR" "603-RT0805DRD071KL"
-			(at 29.21 34.29 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "513ea6f2-b0a3-437c-a4f6-d64b19469b7a")
-		)
-		(pin "2"
-			(uuid "330e2620-67ba-413e-9b50-9f27c4ea2cd3")
-		)
-		(instances
-			(project "timelord2"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -8937,7 +8946,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR" "720-KRDELPS122A5163"
+		(property "MFR" "720-KBDELPS212A6350"
 			(at 39.37 34.29 0)
 			(effects
 				(font
@@ -9773,7 +9782,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "470"
 			(at 72.39 32.004 90)
 			(effects
 				(font
@@ -9781,7 +9790,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 72.39 36.068 90)
 			(effects
 				(font
@@ -9808,7 +9817,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR" "603-RT0805DRD071KL"
+		(property "MFR" "603-RT0603DRD07470RL"
 			(at 72.39 34.29 90)
 			(effects
 				(font
@@ -9827,100 +9836,6 @@
 			(project "timelord2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "R18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Timer_RTC:DS3231MZ")
-		(at 165.1 39.37 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "989173f9-85e9-40a0-8c0a-3e848df5e99a")
-		(property "Reference" "U3"
-			(at 167.2433 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "DS3231MZ"
-			(at 167.2433 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 165.1 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://datasheets.maximintegrated.com/en/ds/DS3231M.pdf"
-			(at 165.1 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "±5ppm, I2C Real-Time Clock SOIC-8"
-			(at 165.1 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "92ad4861-8c0a-47fc-be36-b556068a9f0a")
-		)
-		(pin "8"
-			(uuid "4c7ce792-c2b4-4860-8f23-16bb674aef6f")
-		)
-		(pin "2"
-			(uuid "adcc48f2-668e-480a-9f59-af42111c98fa")
-		)
-		(pin "5"
-			(uuid "c418c344-86e0-47dc-9164-81daf2b56372")
-		)
-		(pin "4"
-			(uuid "4039c754-cb0c-47ab-b4a2-b451c9918c97")
-		)
-		(pin "3"
-			(uuid "cf168645-f5cb-4885-b2cd-b0ced22ad8d3")
-		)
-		(pin "7"
-			(uuid "54d177f5-6167-4dfe-b37e-c9c82e5b6a00")
-		)
-		(pin "1"
-			(uuid "6223cf87-12a4-458f-9625-f11703b20a25")
-		)
-		(instances
-			(project ""
-				(path "/2c3bf53d-e449-43cf-bd3c-975c2dd5bd35"
-					(reference "U2")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -10486,7 +10401,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR" "621-1N5711W-F"
+		(property "MFR" "863-BC846BLT1G"
 			(at 93.98 36.83 90)
 			(effects
 				(font
@@ -10650,6 +10565,103 @@
 			(project "timelord2"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR0113")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Timer_RTC:DS3232M")
+		(at 165.1 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d9c0303d-0385-45e5-a78f-8768aff04f76")
+		(property "Reference" "U2"
+			(at 167.2433 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "DS3232M"
+			(at 167.2433 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 166.37 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://datasheets.maximintegrated.com/en/ds/DS3232M.pdf"
+			(at 171.958 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "±5ppm, I2C Real-Time Clock with SRAM SOIC-8"
+			(at 165.1 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "700-DS3232MZ+TRL"
+			(at 165.1 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "987c00d2-410f-4eda-84db-d8ec95810043")
+		)
+		(pin "6"
+			(uuid "72384bd3-8a7e-400e-a1ec-4f4ef14b0f7d")
+		)
+		(pin "2"
+			(uuid "c1ae7558-2fb9-472d-8c05-2a5ed340f92c")
+		)
+		(pin "1"
+			(uuid "60db0c43-89d4-451e-91cf-3cae78f11d5c")
+		)
+		(pin "4"
+			(uuid "572c7413-4bf2-4a94-85dd-158a978dabbb")
+		)
+		(pin "3"
+			(uuid "b0556025-8631-416e-828b-0b4c81ab3521")
+		)
+		(pin "5"
+			(uuid "9e5df2ee-2bb4-4b1c-abbd-6c459e217e56")
+		)
+		(pin "7"
+			(uuid "d783a35d-11d8-4550-adeb-5e6ba3a8880f")
+		)
+		(instances
+			(project ""
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -10947,7 +10959,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFR" "621-1N5711W-F"
+		(property "MFR" "863-BC846BLT1G"
 			(at 50.8 36.83 90)
 			(effects
 				(font
