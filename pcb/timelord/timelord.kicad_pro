@@ -192,6 +192,7 @@
       ],
       "track_widths": [
         0.0,
+        0.3493,
         0.5,
         0.6,
         0.8,
@@ -497,10 +498,17 @@
         "wire_width": 6
       },
       {
+        "name": "PPS",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.3493
+      },
+      {
         "clearance": 0.5,
         "name": "RF",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.3493
       }
@@ -514,6 +522,10 @@
       {
         "netclass": "RF",
         "pattern": "RF"
+      },
+      {
+        "netclass": "PPS",
+        "pattern": "PPS*"
       }
     ]
   },
